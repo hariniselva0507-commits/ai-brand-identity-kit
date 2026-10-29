@@ -1,0 +1,219 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f1ff;
+  color: #25213b;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 35px 15px;
+  background: #34245c;
+  color: white;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #ded5ff;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.panel,
+.result {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #34245c12;
+}
+
+h2 {
+  margin-bottom: 22px;
+  color: #34245c;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8d1eb;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6846c7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4d309d;
+}
+
+.result h3 {
+  margin: 18px 0 10px;
+}
+
+#name {
+  font-size: 28px;
+  color: #6846c7;
+}
+
+#tagline,
+#description,
+#fonts {
+  line-height: 1.7;
+  color: #615b70;
+}
+
+.colors {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.swatch {
+  flex: 1;
+  min-width: 0;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 8px 2px;
+  font-size: 11px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+}
+#copyBtn {
+    margin-top: 20px;
+    padding: 14px 24px;
+    background: #2d2450;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#copyBtn:hover {
+    background: #6844cc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(75, 50, 140, 0.2);
+}
+
+#downloadBtn {
+    margin: 20px 0 0 10px;
+    padding: 14px 24px;
+    background: #6844cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#downloadBtn:hover {
+    background: #4d2ca8;
+}
+
+/* Professional Brand Logo */
+.logo-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(45, 36, 80, 0.08);
+}
+
+.logo-section h2 {
+    color: #2d2450;
+    margin-bottom: 20px;
+}
+
+#logoPreview {
+    max-width: 420px;
+    min-height: 200px;
+    margin: 15px 0;
+    padding: 25px;
+    background: #f5f0ff;
+    border: 2px solid #e2d7ff;
+    border-radius: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo-symbol {
+    font-size: 58px;
+    color: #6844cc;
+    margin-bottom: 10px;
+}
+
+#logoBrandName {
+    color: #2d2450;
+    font-size: 28px;
+    overflow-wrap: anywhere;
+    margin: 10px 0;
+}
+
+.logo-section button {
+    margin: 8px 8px 0 0;
+    padding: 12px 18px;
+    background: #6844cc;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo-section button:hover {
+    background: #4d2ca8;
+}
+

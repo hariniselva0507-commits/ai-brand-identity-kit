@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Brand Identity Starter Kit</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>AI Brand Studio</h1>
+    <p>Create your brand identity in minutes</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Build Your Brand</h2>
+
+      <label>Business Name</label>
+      <input id="brand" placeholder="e.g. BrewNest">
+
+      <label>Business Type</label>
+      <select id="type">
+        <option value="Coffee Shop">Coffee Shop</option>
+        <option value="Clothing">Clothing Brand</option>
+        <option value="Technology">Tech Startup</option>
+        <option value="Skincare">Skincare Brand</option>
+      </select>
+
+      <label>Brand Style</label>
+      <select id="style">
+        <option value="Modern">Modern</option>
+        <option value="Minimal">Minimal</option>
+        <option value="Luxury">Luxury</option>
+        <option value="Playful">Playful</option>
+      </select>
+
+      <button onclick="generateBrand()">Generate Brand Identity</button>
+    </section>
+
+    <section class="result">
+      <h2>Your Brand Preview</h2>
+      <h3 id="name">Your Brand Name</h3>
+      <p id="tagline">Your tagline will appear here.</p>
+      <p id="description">Your brand description will appear here.</p>
+      <h3>Colour Palette</h3>
+      <div id="colors" class="colors"></div>
+      <p id="fonts">Suggested fonts will appear here.</p>
+      <button id="copyBtn" onclick="copyBrandDetails()">
+    Copy Brand Details
+</button>
+   
+<!-- Logo Generator -->
+<div class="logo-section">
+    <h2>Brand Logo</h2>
+
+    <div id="logoPreview">
+        <div class="logo-symbol">✦</div>
+        <h3 id="logoBrandName">Your Brand</h3>
+        <p>Minimal &amp; Professional</p>
+    </div>
+
+    <button onclick="generateLogo()">Generate Logo</button>
+    <button onclick="downloadLogo()">Download Logo</button>
+    
+<button onclick="downloadLogoPNG()">Download Logo as PNG</button>
+
+</div>
+
+</section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+<button id="downloadBtn" onclick="downloadBrandProfile()">
+    Download Brand Profile
+</button>
+
